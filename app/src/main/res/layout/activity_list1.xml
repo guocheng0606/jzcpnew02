@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar" />
+
+    <com.lany.state.StateLayout
+        android:id="@+id/stateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyView="@layout/custom_empty_view"
+        app:errorView="@layout/custom_error_view"
+        app:loadingView="@layout/custom_loading_view"
+        app:networkView="@layout/custom_network_view"
+        app:viewState="content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="【福彩3D】第18198期推荐"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_text"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金胆：2"
+                android:textColor="@color/black1"
+                android:textSize="14sp"
+                android:layout_marginLeft="32dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银胆：4"
+                android:textColor="@color/black1"
+                android:textSize="14sp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="铜胆：9"
+                android:textColor="@color/black1"
+                android:textSize="14sp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5码复式：12489"
+                android:textColor="@color/black1"
+                android:textSize="14sp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6码复式：124789"
+                android:textColor="@color/black1"
+                android:textSize="14sp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注：以上内容基于大数据内容得出，具有一定的参考性，但不保证任何的准确性，仅供参考。"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="35dp"
+                android:lineSpacingExtra="5dp"/>
+
+        </LinearLayout>
+
+    </com.lany.state.StateLayout>
+
+</LinearLayout>

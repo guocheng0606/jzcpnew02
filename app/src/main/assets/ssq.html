@@ -1,0 +1,120 @@
+﻿
+<html>
+<head>
+<title>双色球玩法介绍</title>
+ 
+
+<meta http-equiv="Content-Type" charset="utf-8"/>
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>	
+<link rel="shortcut icon" href="http://www.ydniu.com/favicon.ico"/>
+<style type="text/css">
+*{margin:0; padding:0; font:normal 1em "微软雅黑";}
+.font75{font-size:0.75em;}
+.font15{font-size:1.5em;}
+.font125{font-size:1.25em;}
+.font875{font-size:0.875em;}
+.fontb{font-weight:bold;}
+.fontArial{font-family:Arial;}
+span.zs_blue{color:#0365c4;}
+span.zs_red{color:#ff0065;}
+span.zs_purple{color:#fd01fc;}
+
+
+header{width:100%; height:40px; color:#fff; line-height:40px; background-color:#E26B1B; position:fixed; top:0; z-index:9;}
+header span{display:block; text-align:center; width:100%; max-width:640px; position:relative; margin:0 auto;}
+header .title{margin:4px auto; display:inline-block; height:26px; line-height:24px; background-color:#D86417; border:2px solid #D05909; -web-border-radius:10px; -moz-border-radius:10px; border-radius:10px; padding:0 32px 0 14px; cursor:pointer; position:relative;}
+header .title span{display:inline-block; width:13px; height:12px; background-image:url(img/k3_sel.jpg); background-repeat:no-repeat; background-size:13px 12px; background-position:0 0; position:absolute; right:10px; top:8px;}
+header .xc_return{display:inline-block; width:30px; height:30px; background-image:url(img/xc_zz_return.jpg); background-repeat:no-repeat; background-position:0 0; background-size:30px 30px; cursor:pointer; position:absolute; left:13px; top:4px;}
+.xc_br{display:inline-block; width:2px; height:40px; background-image:url(img/xc_zz_br.jpg); background-repeat:repeat-y; background-position:0 0; position:absolute; left:60px; top:0;}
+header img.xc_refresh{right:30px; top:28px;}
+.c{float:none; height:0; overflow:hidden; clear:both;}
+
+i.del,i.add,i.del2,i.add2{background-color:#EAEAEA; background-image:url(img/zhicondel.jpg); background-repeat:no-repeat; background-size:15px 2px; background-position:center center; cursor:pointer; display:inline-block; width:25px; height:25px; vertical-align:middle;}
+i.add{background-image:url(img/zhiconadd.jpg); background-size:15px 15px;}
+i.del2,i.add2{background-image:url(img/btn_del1.png); background-size:25px 25px; margin-left:10px;}
+i.add2{background-image:url(img/btn_add1.png); margin-left:0; margin-right:5px;}
+
+.inp_txt{border:0; border-top:1px solid #ddd; border-bottom:1px solid #ddd; box-shadow:3px 3px 3px #E7E7E7 inset; width:40px; height:23px; color:#666; line-height:23px; text-align:center; vertical-align:middle;}
+
+.yd_tip{background-color:#000; border-radius:3px; display:none; width:200px; color:#fff; margin-left:-100px; padding:4px 10px 7px; text-align:center; position:fixed; left:50%; bottom:115px; z-index:9;}
+
+header .title{padding-right:14px;}
+.maincon{width:100%; text-align:center;}
+
+.wf_con{display:inline-block; width:95%; max-width:640px; text-align:left; margin:0 auto; position:relative;}
+.czlist{margin-bottom:10px; position:fixed; top:0; z-index:9; background-color:#fff;}
+.czlist label{width:145px; overflow:hidden; display:inline-block; height:34px; padding-top:1px; vertical-align:middle;}
+.czlist em{display:inline-block; white-space:nowrap;}
+.czlist a,.czlist i.fq_left,.czlist i.fq_right{display:inline-block; width:68px; height:33px; border:1px solid #e6e6e6; color:#666; line-height:33px; text-align:center; text-decoration:none; vertical-align:middle; margin-left:-1px;}
+.czlist a:hover,.czlist a.fq_cur{display:inline-block; background-image:url(img/hm_gk.jpg); background-repeat:no-repeat; background-size:70px 35px; width:70px; height:35px; line-height:35px; color:#fff; border:0;}
+.czlist i.fq_left,.czlist i.fq_right{background-image:url(img/icon-more.png); background-repeat:no-repeat; width:34px; background-size:30px 30px; background-position:center center; cursor:pointer;}
+.czlist i.fq_right{background-image:url(img/icon-right.png);}
+.czlist label a{margin-top:-1px;}
+
+.play_con label,.play_con span,td,p{font-size:0.875em;}
+th,h4{font-size:0.875em;}
+.play_con a,h3{font-weight:bold;}
+h3{color:#333; font-size:0.875em; margin-top:20px;}
+p{color:#666; line-height:20px; margin-top:0; text-indent:28px;}
+h4{color:#e16a1a; margin-top:15px;}
+h5{color:#fe0000; height:18px; margin-top:10px;}
+table{border-top:1px solid #ddd; border-left:1px solid #ddd; width:100%; margin-top:5px;}
+th,td{border-bottom:1px solid #ddd; border-right:1px solid #ddd; height:30px;}
+th{background-color:#eee; color:#666;}
+td,td p{color:#666; line-height:20px; text-align:center;}
+.play_con td p{text-align:left; text-indent:28px; margin:5px 0;}
+.play_con h2 a{background:none; text-align:left; display:inline; border:0; color:#d68f5f; height:28px; line-height:28px; margin-top:20px; text-decoration:none;}
+.play_con h2 a:hover{text-decoration:none; color:#d68f5f;}
+.play_con span{display:block; width:100%; color:#888; line-height:24px; margin-top:5px;}
+.play_con label{display:block; color:#999; line-height:18px; margin-top:5px; padding-left:28px;}
+
+.play_li{display:none;}
+.wf_con a.to_top{display:inline-block; width:45px; height:45px; background-image:url(img/totop.png); background-repeat:no-repeat; background-size:45px 45px; position:fixed; bottom:20px; right:2%; cursor:pointer;} 
+
+.title{
+	background-color:#E26B1B; color:#FFF; overflow:auto; font-size:18px; text-align:center;margin-top:8px;line-height:40px;margin-left:30px;margin-right: 30px 
+}
+</style> 
+</head>
+
+
+<div class="title">双色球玩法介绍</div>
+<h3>1、投注方式：</h3>
+<p>双色球投注区分为红球号码区和蓝球号码区，红球号码范围为01～33，蓝球号码范围为01～16。双色球每期从33个红球中开出6个号码，从16个蓝球中开出1个号码作为中奖号码，双色球玩法即是竞猜开奖号码的6个红球号码和1个蓝球号码，顺序不限.</p>
+<h4>1、标准投注</h4>
+<p>从红球号码中选择6个号码，从蓝球号码中选择1个号码为一注，红球最多可选20个号码，蓝球最多可全选。单注最高奖金可达1000万元。</p>
+<h4>2、胆拖投注</h4>
+<p>在33个红球号码中选择1～5个号码作为每注都有的胆码，再补充其它不同的红球号码作为拖码进行投注，蓝球无胆码和拖码之分。单注最高奖金可达1000万元。</p>
+
+<h3>2、设奖及中奖：</h3>
+<TABLE cellSpacing="1" cellPadding="0">
+<colgroup><col width="10%"/><col width="10%"/><col width="10%"/><col width="10%"/><col width="50%"/><col width="10%"/></colgroup>
+<TR><Th rowSpan="2">奖级</Th><Th colSpan="2">中奖条件</Th><Th rowSpan="2">中奖说明</Th><Th rowSpan="2">单注奖金</Th><Th rowSpan="2">单注赔率</Th></TR>
+<TR><Th width="13%">红球</Th><Th width="7%">蓝球</Th></TR>
+<TR><Td>一等奖</TD><TD>●●●●●●</TD><TD>●</TD><TD>中6+1</TD><TD><p>当奖池资金低于1亿元时，奖金总额为当期高等奖奖金的70%与奖池中累积的奖金之和，单注奖金按注均分，单注最高限额封顶500万元。</p>
+<p>当奖池资金高于1亿元（含）时，奖金总额包括两部分，一部分为当期高等奖奖金的50%与奖池中累积的奖金之和，单注奖金按注均分，单注最高限额封顶500万元；另一部分为当期高等奖奖金的20%，单注奖金按注均分，单注最高限额封顶500万元。</p></TD><TD>--</TD></TR>
+<TR><TD>二等奖</TD><TD>●●●●●●</TD><TD> </TD><TD>中6+0</TD><TD><p>当期高等奖奖金的30%<p></TD><TD> </TD></TR>
+<TR><TD>三等奖</TD><TD>●●●●●</TD><TD>●</TD><TD>中5+1</TD><TD><p>单注奖金额固定为3000元<p></TD><TD>1:1500</TD></TR>
+<TR><TD rowSpan="2">四等奖</TD><TD>●●●●●</TD><TD> </TD><TD>中5+0</TD><TD rowSpan="2"><p>单注奖金额固定为200元<p></TD><TD rowSpan="2">1:100</TD></TR>
+<TR><TD>●●●●</TD><TD>●</TD><TD>中4+1</TD></TR>
+<TR><TD rowSpan="2">五等奖</TD><TD>●●●●</TD><TD> </TD><TD>中4+0</TD><TD rowSpan="2"><p>单注奖金额固定为10元<p></TD><TD rowSpan="2">1:5</TD></TR>
+<TR><TD>●●●</TD><TD>●</TD><TD>中3+1</TD></TR>
+<TR><TD rowSpan="3">六等奖</TD><TD>●●</TD><TD>●</TD><TD>中2+1</TD><TD rowSpan="3"><p>单注奖金额固定为5元<p></TD><TD rowSpan="3">1:2.5</TD></TR>
+<TR><TD>●</TD><TD>●</TD><TD>中1+1</TD></TR>
+<TR><TD> </TD><TD>●</TD><TD>中0+1</TD></TR>
+</TABLE>
+<h5>注：</h5>
+<p>1、高等奖奖金＝奖金总额－固定奖奖金。<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2、当奖池奖金超过1亿元(含)时，下期一等奖奖金总额包括两部分，一部分为高等奖奖金的50%与奖池奖金之和，单注奖金按注均分，封顶500万元；另一部分为高等奖奖金的20%，单注奖金按注均分，封顶500万元。<br/>
+ 2、当奖池奖金超过1亿元(含)时，下期一等奖奖金总额包括两部分，一部分为高等奖奖金的50%与奖池奖金之和，单注奖金按注均分，封顶500万元；另一部分为高等奖奖金的20%，单注奖金按注均分，封顶500万元。<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3、奖池奖金在1亿元以下时，单注奖金封顶500万元。</p>
+
+<h3>3、开奖返奖:</h3>
+<p>每周二、四、日21:30开奖，每周三期，开奖号码通过摇奖方式产生，中国教育电视台对开奖进行现场直播.</p>
+
+<a href="#" class="to_top"></a>
+</body>
+</html>

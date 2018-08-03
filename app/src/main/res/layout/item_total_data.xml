@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TableRow
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingBottom="1dp"
+      android:paddingLeft="1dp"
+      android:paddingRight="1dp"
+      android:background="@color/gray_white"
+      android:orientation="horizontal">
+
+      <TextView
+        android:id="@+id/jx"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="奖项"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent" />
+
+      <TextView
+        android:id="@+id/zs"
+        android:layout_width="0dip"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="中奖注数(注)"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:typeface="monospace" />
+
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent" />
+
+      <TextView
+        android:id="@+id/jj"
+        android:layout_width="0dip"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="每注奖金(元)"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:typeface="monospace" />
+
+    </TableRow>
+
+  </TableLayout>
+
+</LinearLayout>

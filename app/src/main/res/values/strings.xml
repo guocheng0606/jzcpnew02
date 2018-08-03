@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">九州彩票</string>
+    <!--开关接口-->
+    <string name="url">http://app.kaiguan1700.com/lottery/back/get_init_data.php</string>
+    <!--appid-->
+    <string name="appid">test4</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

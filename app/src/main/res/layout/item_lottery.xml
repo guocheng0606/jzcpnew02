@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/llLottery"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:paddingTop="15dp"
+      android:paddingBottom="20dp"
+      android:paddingLeft="15dp"
+      android:paddingRight="8dp"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+          android:id="@+id/tv_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/shape_bg_corner"
+          android:text="彩种"
+          android:textColor="@color/white"
+          android:textSize="11sp"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:paddingTop="1dp"
+          android:paddingBottom="1dp"/>
+
+        <TextView
+          android:id="@+id/tv_qs"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="第N期"
+          android:textColor="@color/black"
+          android:textSize="13sp" />
+
+        <TextView
+          android:id="@+id/tv_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="时间戳"
+          android:textColor="@color/black1"
+          android:textSize="13sp"/>
+
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+          android:id="@+id/ll_redball"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:orientation="horizontal" />
+
+        <LinearLayout
+          android:id="@+id/ll_blueball"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/ll_show"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:padding="10dp"
+      android:gravity="center">
+
+      <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_right_arrow" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>
